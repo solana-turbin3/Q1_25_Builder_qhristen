@@ -2,7 +2,7 @@ import { createUmi } from "@metaplex-foundation/umi-bundle-defaults"
 import { createSignerFromKeypair, signerIdentity, generateSigner, percentAmount } from "@metaplex-foundation/umi"
 import { createNft, mplTokenMetadata } from "@metaplex-foundation/mpl-token-metadata";
 
-import wallet from "../wba-wallet.json"
+import wallet from "../turbin3-wallet.json"
 import base58 from "bs58";
 
 const RPC_ENDPOINT = "https://api.devnet.solana.com";
@@ -16,11 +16,20 @@ umi.use(mplTokenMetadata())
 const mint = generateSigner(umi);
 
 (async () => {
-    // let tx = ???
-    // let result = await tx.sendAndConfirm(umi);
-    // const signature = base58.encode(result.signature);
+    let tx = await createNft(umi, {
+        mint,
+        name: "Blaq NFT",
+        symbol: "BLG",
+        uri: "https://devnet.irys.xyz/47AwfZuPiX65MgYY4LfzvKyqZwYgAhc1H3w3XBQA1tgr",
+        sellerFeeBasisPoints: percentAmount(0),
+        
+        isCollection: false
+      });
+
+    let result = await tx.sendAndConfirm(umi);
+    const signature = base58.encode(result.signature);
     
-    // console.log(`Succesfully Minted! Check out your TX here:\nhttps://explorer.solana.com/tx/${signature}?cluster=devnet`)
+    console.log(`Succesfully Minted! Check out your TX here:\nhttps://explorer.solana.com/tx/${signature}?cluster=devnet`)
 
     console.log("Mint Address: ", mint.publicKey);
 })();
