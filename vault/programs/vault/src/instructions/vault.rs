@@ -11,7 +11,7 @@ pub struct Initialize<'info> {
         payer = user,
         seeds = [b"state", user.key().as_ref()], 
         bump,
-        space = VaultState::INIT_SPACE,
+        space = VaultState::INIT_SPACE + 8,
     )]
     pub vault_state: Account<'info, VaultState>,
     #[account(
