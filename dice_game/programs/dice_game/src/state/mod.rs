@@ -1,2 +1,2 @@
-pub mode bet;
+pub mod bet;
 pub use bet::*;
