@@ -1,4 +1,4 @@
-This respository contains all project and resources during Turbin3 Q1 2025 cohort.
+This respository contains all project and resources during Turbin3 Q1 2025 builders cohort.
 
 
 ### Content/Folders
