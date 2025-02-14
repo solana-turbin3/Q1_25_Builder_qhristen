@@ -9,7 +9,7 @@ amm: Contains Anchor program for an Automated Market Maker Smart Contract
 dice_game: Contains Anchor program for a Dice Game
 nft_market: Contains Anchor program for NFT Marketplace Smart Contract
 pre-requisite: Contains rust codes for the second pre-requisite task
-solana-starter: Contains JS/TS SPL relateds code
+solana-starter: Contains JS/RS SPL relateds code
 nft_staking: Contains Anchor program for a Token Staking Protocol
 stableflow: Contains resources for my Capstone project
 
