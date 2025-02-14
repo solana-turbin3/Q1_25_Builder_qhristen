@@ -25,6 +25,9 @@ stableflow: Contains resources for my Capstone project
 
 ### Setup
 Install Rust
+
 Install Node
+
 Install Anchor Version Manager
+
 Install Solana Command Line Interface
