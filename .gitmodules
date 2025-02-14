@@ -1,0 +1,3 @@
+[submodule "stableflow"]
+	path = stableflow
+	url = https://github.com/Qhristen/stableflow.git
