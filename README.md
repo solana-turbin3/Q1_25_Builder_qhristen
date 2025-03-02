@@ -25,6 +25,7 @@ stableflow: Contains resources for my Capstone project
 
 ### Capstone
 Devnet Program Id: FvwXgB97QyQHF6PE9EyVBcPtuHxJrLhKpYnu1dorRe3x
+https://solscan.io/account/FvwXgB97QyQHF6PE9EyVBcPtuHxJrLhKpYnu1dorRe3x?cluster=devnet
 
 ### Setup
 Install Rust
